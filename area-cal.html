@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .heading-btn {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+      }
+      #result {
+        display: inline-block;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="app">
+      <h1>Area Calculator</h1>
+      <div class="heading-btn">
+        <h3>Result : <span id="result"></span></h3>
+        <button onclick="storeCal()" id="storeBtn">Store</button>
+        <button onclick="clearCal()" id="clearBtn">Clear</button>
+      </div>
+      <div class="">
+        <input type="number" id="inputWidth" placeholder="Enter number">
+        <input type="number" id="inputHeight" placeholder="Enter number">
+        <button id="add" onclick="addBtn()">+</button>
+        <button id="sub" onclick="subBtn()">-</button>
+        <button id="mul" onclick="mulBtn()">*</button>
+        <button id="div" onclick="divBtn()">/</button>
+      </div>
+      <ul id="record">
+        <!-- <li>5ft * 4ft = 20ft<sup>2</sup></li> -->
+      </ul>
+    </main>
+
+    <script src="./area-cal.js"></script>
+  </body>
+</html>
